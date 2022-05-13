@@ -16,7 +16,7 @@ const style = {
 const Home: NextPage = () => {
     const { address, connectWallet } = useWeb3()
 
-    const welcomeUser = (userName, toastHandler = toast) => {
+    const welcomeUser = (userName: string, toastHandler = toast) => {
         toastHandler.success(
             `Welcom back ${userName !== 'Unnamed' ? `${userName}` : ''}!`,
             {
